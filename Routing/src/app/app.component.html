@@ -1,0 +1,36 @@
+
+<!--
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Mes appareils</h2>
+      <ul class="list-group">
+        <app-appareil appareilName="Machine à laver"></app-appareil>
+        <app-appareil appareil appareilName="Frigo"></app-appareil>
+        <app-appareil appareilName="Ordinateur"></app-appareil>
+      </ul>
+      <button class="btn btn-success" [disabled]="!isAuth" (click)="onAllumer()">Tout allumer</button>
+    </div>
+  </div>
+</div>-->
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-collapse">
+     
+        <ul class="nav navbar-nav">
+          <li routerLinkActive="active"><a routerLink="auth">Authentification</a></li>
+          <li routerLinkActive="active"><a routerLink="appareils">Appareils</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
